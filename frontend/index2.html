@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sustainable Agriculture Growth Detection</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- Adding Google Fonts for elegant typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Sustainable Growth</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <div class="overlay">
+        <h2>Welcome to Sustainable Agriculture Growth Detection</h2>
+        <p>Empowering farmers with technology for sustainable and efficient crop growth analysis.</p>
+        <button class="cta-btn">Get Started</button>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>This platform uses advanced Machine Learning to assess the sustainability of agricultural practices based on various parameters like soil type, pest control measures, irrigation types, and organic fertilizer usage.</p>
+    </section>
+
+    <section id="results">
+      <h2>Enter Agricultural Parameters</h2>
+      <div class="results-container">
+        <form id="input-form">
+          <!-- Soil Type -->
+
+          <div class="column-container">
+            <!-- Soil Type -->
+            <div class="column-card">
+              <div class="image-container">
+                <img src="./images/soil.png" alt="Soil Type">
+              </div>
+              <div class="content">
+                <h3>Soil Type</h3>
+                <label for="soil-type">Enter Soil Type:</label>
+                <input type="text" id="soil-type" placeholder="e.g., Sandy, Clay">
+              </div>
+            </div>
+            
+            <!-- Pest Control Measure -->
+            <div class="column-card">
+              <div class="image-container">
+                <img src="./images/insecticide.png" alt="Pest Control Measure">
+              </div>
+              <div class="content">
+                <h3>Pest Control Measure</h3>
+                <label for="pest-control">Enter Pest Control Used:</label>
+                <input type="text" id="pest-control" placeholder="e.g., Organic, Chemical">
+              </div>
+            </div>
+          
+            <!-- Irrigation Type -->
+            <div class="column-card">
+              <div class="image-container">
+                <img src="./images/watering-plants.png" alt="Irrigation Type">
+              </div>
+              <div class="content">
+                <h3>Irrigation Type</h3>
+                <label for="irrigation-type">Enter Irrigation Type:</label>
+                <input type="text" id="irrigation-type" placeholder="e.g., Drip, Sprinkler">
+              </div>
+            </div>
+          
+            <!-- Organic Fertilizer Used -->
+            <div class="column-card">
+              <div class="image-container">
+                <img src="./images/fertilizer.png" alt="Organic Fertilizer">
+              </div>
+              <div class="content">
+                <h3>Organic Fertilizer</h3>
+                <label for="organic-fertilizer">Enter Fertilizer Used:</label>
+                <input type="text" id="organic-fertilizer" placeholder="e.g., Compost, Manure">
+              </div>
+            </div>
+          </div>
+          
+          <!-- Submit Button -->
+          <div class="analyze-btn-container">
+            <button id="analyze-btn">Analyze</button>
+          </div>
+          </form>
+
+          <div id="predictionResult" class="prediction-output">
+            <!-- The result will be injected here by JavaScript -->
+             
+            <!-- <h3>Prediction:</h3>
+            <p><strong>Soil Type:</strong> data.prediction.soilType</p>
+            <p><strong>Pest Control:</strong> data.prediction.pestControl</p>
+            <p><strong>Irrigation Type:</strong> {data.prediction.irrigationType</p>
+            <p><strong>Organic Fertilizer Used:</strong> data.prediction.organicFertilizer}</p>
+            <p><strong>Sustainability Status:</strong> data.prediction.sustainabilityStatus</p> -->
+          </div>
+
+
+        </div>
+    
+          
+    </section>
+    
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: info@agriculture.com</p>
+      <p>Phone: +123 456 7890</p>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>&copy; 2024 Sustainable Growth | All Rights Reserved</p>
+  </footer>
+
+  <!-- Link to the external JS file -->
+  <script src="./index2.js"></script>
+</body>
+</html>
